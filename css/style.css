@@ -1,0 +1,88 @@
+
+		body
+		{
+			margin: 0;
+			width: 100%;
+			height: 110vh;
+			background: linear-gradient(180deg, #000046, #1CB5E0);
+			color: white;
+			font-family: 'Roboto Mono', monospace;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+		}
+		#sign_up
+		{
+			width: 30vw;
+			height: auto;
+			color: white;
+			background-color: gray;
+			border-radius: 10px;
+			box-shadow: 0 0 16px 0 #000000;
+		}
+		#container
+		{
+			max-width: 100%;
+			height: auto;
+			margin: 10px 5px 10px 5px;
+			padding: 20px;
+			background-color: #000046;
+			border-radius: 10px;
+		}
+		#container header
+		{
+			font-size: 24px;
+			padding: 10px 10px 10px 0;
+			border-bottom: 2px solid #1CB5E0;
+			margin-bottom: 10px;
+		}
+		form
+		{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+		label
+		{
+			padding: 5px;
+		}
+		input
+		{
+			padding: 10px;
+			margin: 5px;
+			border: 3px solid gray;
+			border-radius: 5px;
+			font-size: 16px;
+		}
+		#submit
+		{
+			background-color: #52c234;
+			border: none;
+			color: white;
+		}
+		#submit:hover
+		{
+			background-color: #56ab2f;
+			cursor: pointer;
+		}
+		#links
+		{
+			max-width: 100%;
+			padding: 5px;
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
+		}
+		#links a
+		{
+			text-decoration: underline;
+			color: blue;
+			text-shadow: 0 0 0 16px #000000;
+		}
+		@media (max-width: 1040px)
+		{
+			#sign_up{
+				width: 80vw;
+			}
+		}
