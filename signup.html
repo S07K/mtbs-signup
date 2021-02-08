@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MTBS Sign In</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+	<style type="text/css">
+		body
+		{
+			margin: 0;
+			width: 100%;
+			height: 110vh;
+			background: linear-gradient(180deg, #000046, #1CB5E0);
+			color: white;
+			font-family: 'Roboto Mono', monospace;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+		}
+		#sign_up
+		{
+			width: 30vw;
+			height: auto;
+			color: white;
+			background-color: gray;
+			border-radius: 10px;
+			box-shadow: 0 0 16px 0 #000000;
+		}
+		#container
+		{
+			max-width: 100%;
+			height: auto;
+			margin: 10px 5px 10px 5px;
+			padding: 20px;
+			background-color: #000046;
+			border-radius: 10px;
+		}
+		#container header
+		{
+			font-size: 24px;
+			padding: 10px 10px 10px 0;
+			border-bottom: 2px solid #1CB5E0;
+			margin-bottom: 10px;
+		}
+		form
+		{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+		label
+		{
+			padding: 5px;
+		}
+		input
+		{
+			padding: 10px;
+			margin: 5px;
+			border: 3px solid gray;
+			border-radius: 5px;
+			font-size: 16px;
+		}
+		#submit
+		{
+			background-color: #52c234;
+			border: none;
+			color: white;
+		}
+		#submit:hover
+		{
+			background-color: #56ab2f;
+			cursor: pointer;
+		}
+		#links
+		{
+			max-width: 100%;
+			padding: 5px;
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
+		}
+		#links a
+		{
+			text-decoration: underline;
+			color: blue;
+			text-shadow: 0 0 0 16px #000000;
+		}
+		@media (max-width: 1040px)
+		{
+			#sign_up{
+				width: 80vw;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div id="head">
+		<h1 style="padding: 10px 10px 5px 10px;	text-shadow: 0 0 16px 0 #000000;">
+			<span class="iconify" data-icon="fluent:movies-and-tv-16-regular" data-inline="false"></span>M T B S
+		</h1>
+	</div>
+	<div id="sign_up">
+		<div id="container">
+			<header>Sign Up/Register</header>
+			<form action="">
+				<label for="username">Username <span style="color: red">*</span>: </label>
+				<input type="text" id="username" name="username" placeholder="Enter Unique Username" required="">
+
+				<label for="email_id">Email Id  <span style="color: red">*</span>: </label>
+				<input type="email" id="email_id" name="email" placeholder="username@email.com" required="">
+
+				<label for="phone">Phone Number <span style="color: red">*</span>: </label>
+				<input type="text" id="phone" name="number" placeholder="+91 XX XXXX XXXX" required="">
+
+				<label for="password">Password <span style="color: red">*</span>: </label>
+				<input type="password" id="password" name="password" placeholder="Enter a strong password" required="">
+
+				<div>
+					<input type="checkbox" id="terms" name="terms" required="">
+					<label for="terms">Terms and policies.<span style="color: red">*</span></label>
+				</div>
+				
+				<input type="submit" id="submit">
+			</form>
+		</div>
+		<div id="links">
+			<a href="terms">Terms</a>
+			<a href="policies">service Policies</a>
+		</div>
+	</div>
+</body>
+<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+</html>
